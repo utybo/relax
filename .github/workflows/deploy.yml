@@ -1,8 +1,9 @@
 name: Deploy
 on:
   push:
-    - development
-    - add-github-actions
+    branches:
+      - development
+      - add-github-actions
 
 jobs:
   deploy:
