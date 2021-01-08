@@ -38,7 +38,8 @@ module.exports = (env, options) => {
 		output: {
 			path: __dirname + "/dist/",
 			filename: isProduction ? "js/[name].[hash].bundle.js" : "js/[name].bundle.js",
-			publicPath: isProduction ? "/relax/" : "/",
+			// publicPath: isProduction ? "/relax/" : "/",
+			publicPath: "/",
 		},
 		devtool: isProduction ? '' : 'cheap-module-eval-source-map',
 		plugins: [
