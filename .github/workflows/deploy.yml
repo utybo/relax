@@ -2,6 +2,7 @@ name: Deploy
 on:
   push:
     - development
+    - add-github-actions
 
 jobs:
   deploy:
